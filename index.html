@@ -1,14 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UITM</title>
-</head>
-<body>
-    <img src="logoUitm.png" alt="Uitm" width="200px" />
-    <br />
-    <h1> Universiti Teknologi MARA</h1>
-    Puncak Perdana
-</body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+        background: linear-gradient(#161616, #b58863, #d3c3b9, #a79e9c, #3d4d55, #10232a);
+        padding-top: 50px; /* Adjust for fixed navbar height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden; /* Prevent scrolling */
+      }
+      .form-container {
+        width: 300px; /* Adjust form width */
+        padding: 20px;
+        border: 1px solid #fefafa;
+        border-radius: 8px;
+        background-color: #000000;
+        font-size: medium;
+        color: #fefafa;
+        
+      }
+      .imgMain {
+        display: block;
+        margin: -100px auto 3px auto;
+        width: 175;
+      }
+      .text-center {
+        text-align: center;
+        margin-bottom: 0; /* Remove extra space */
+        font-size: 14px;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px; /* Add spacing between logo and text */
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+      #emailHelp {
+        color: rgb(148, 140, 140); /* Change the text color of email help text */
+     
+    </style>
+  </head>
+  <body>
+
+    
+</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">UITM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Data</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">UITM di hatiku</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+      <img src="logoUitm.png" alt="Uitm" width="300px" class="imgMain" />
+      <p class="text-center"><strong>Universiti Teknologi MARA</strong></p>
+      <p class="text-center"><strong>Puncak Perdana</strong></p>
+      <form class="form-container">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-dark w-100" onclick="redirectToProfile()">Submit</button>
+        <script>
+          function redirectToProfile() {
+            window.location.href = "profile.html";
+          }
+        </script>
+      </form>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2024 Universiti Teknologi MARA. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
 </html>
